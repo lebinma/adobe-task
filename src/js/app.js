@@ -9,12 +9,16 @@ import { getItems } from "./module/item";
 
 window.$ = $;
 window.jQuery = $;
+
+//add event handlers to global for using in template
 window.addToCart = addToCart;
 window.removeFromCart = removeFromCart;
 window.handleCountChange = handleCountChange;
 
+//initialize empty cart
 initCart();
 
+//get items from file and show them in DOM. Item name is used as the ID
 const items = getItems();
 
 for (let item of items) {
