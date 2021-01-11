@@ -1,0 +1,21 @@
+@keyframes fadein {
+  0% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin fadein {
+  animation: fadein 0.3s;
+}
+
+@mixin hover-fade {
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

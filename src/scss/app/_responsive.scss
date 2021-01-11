@@ -1,0 +1,47 @@
+@media only screen and (max-width: 768px) {
+  .main-layout {
+    padding: 0 !important;
+    flex-direction: column;
+  }
+
+  .header {
+    margin: 0;
+  }
+
+  .cart {
+    order: 1;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 0;
+
+    &__table {
+      border-top: none;
+    }
+
+    &__price {
+      border-right: none;
+      border-left: none;
+    }
+  }
+
+  .items {
+    order: 2;
+    width: 100%;
+    padding: 0 20px;
+
+    .item {
+      display: block;
+      margin: 0 0 20px;
+      width: 100%;
+    }
+  }
+
+  .alert {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: unset;
+    border-radius: 0;
+    padding: 20px;
+  }
+}

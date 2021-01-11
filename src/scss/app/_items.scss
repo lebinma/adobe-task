@@ -1,0 +1,65 @@
+.items {
+  width: calc(100% - #{$cart-width});
+  // padding: 0 20px;
+
+  .item {
+    width: 240px;
+    display: inline-block;
+    border: 2px solid $grey-light;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &__offer {
+      position: absolute;
+      background: $green;
+      color: #fff;
+      padding: 6px;
+      font-weight: 700;
+      font-size: 12px;
+      top: 20px;
+      left: 0px;
+    }
+
+    &__image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: $grey-light;
+    }
+
+    &__footer {
+      padding: 10px 8px;
+      height: 66px;
+      background: $grey-light2;
+
+      &-name {
+        margin: 0 0 2px;
+        font-size: 15px;
+        color: $grey2;
+      }
+
+      &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .price {
+          font-weight: 700;
+          font-size: 16px;
+          float: left;
+
+          &__old {
+            text-decoration: line-through;
+            color: $grey2;
+            margin-right: 6px;
+          }
+        }
+
+        .add-button {
+          float: right;
+        }
+      }
+    }
+  }
+}

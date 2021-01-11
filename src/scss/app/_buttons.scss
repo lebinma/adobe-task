@@ -1,0 +1,14 @@
+.button {
+  cursor: pointer;
+  @include hover-fade;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.button-primary {
+  color: $blue;
+  border: 2px solid $blue;
+  padding: 3px 8px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+}
